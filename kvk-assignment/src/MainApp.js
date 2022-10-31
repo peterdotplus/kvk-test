@@ -14,10 +14,10 @@ class MainApp extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <form onSubmit={(e) => {e.preventDefault();this.refresh()}}>
-          <div><input type="text" value={this.state.search_form_value} onChange={(e) => handleChange(this, "search_form_value", e)} placeholder="zoek hier.." /></div>
-          <div className="form-actions"><input type="submit" value="zoeken" style={{margin:"0 0 0 7px", padding:"1px 12px"}} /></div>
+          <div className="form-field col-2"><input type="text" value={this.state.search_form_value} onChange={(e) => handleChange(this, "search_form_value", e)} placeholder="zoek hier.." /></div>
+          <div className="form-actions col-2"><input type="submit" value="zoeken" /></div>
         </form>
       </div>
     );
