@@ -12,3 +12,6 @@
 }
 
 .form-field input[type="text"] {width: 100%}
+
+#search-results > div {margin-top: 2em}
+#search-results h3, #search-results p {margin: 0}
